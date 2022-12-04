@@ -1,8 +1,7 @@
 use aoc::read_lines;
 use clap::{Parser, Subcommand};
 
-// mod ep1;
-mod ep3;
+mod ep4;
 
 /// A fictional versioning CLI
 #[derive(Debug, Parser)] // requires `derive` feature
@@ -38,9 +37,9 @@ fn main() {
                 }
             }
 
-            let answer = ep3::exec(data);
+            let answer = ep4::exec(data);
 
-            println!("Answer for day: {} \n {}", day, answer);
+            println!("Answer for day: {}\n{}", day, answer);
         }
     }
 }
